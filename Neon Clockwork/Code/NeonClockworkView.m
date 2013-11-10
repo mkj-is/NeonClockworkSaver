@@ -1,7 +1,3 @@
-//
-//  MyScreenSaverView.m 
-//  Cocoa Dev Central: Write a Screen Saver: Part 1
-//
 
 #import "NeonClockworkView.h"
 #import "NSUserDefaults+ColorSupport.h"
@@ -16,11 +12,13 @@ static NSString * const ModuleName = @"is.mkj.neonclockworksaver";
 
 	if (self) 
 	{
-		ScreenSaverDefaults *defaults;
+		ScreenSaverDefaults *defaults = [ScreenSaverDefaults defaultsForModuleWithName:ModuleName];
 
-		defaults = [ScreenSaverDefaults defaultsForModuleWithName:ModuleName];
-
-	    [defaults registerDefaults:[NSDictionary dictionaryWithObjectsAndKeys:[NSUserDefaults dataForColor:[NSColor colorWithCalibratedRed:0.976 green:0.000 blue:0.627 alpha:1]], @"seconds", [NSUserDefaults dataForColor:[NSColor colorWithCalibratedRed:0.624 green:0.000 blue:0.996 alpha:1]], @"minutes", [NSUserDefaults dataForColor:[NSColor colorWithCalibratedRed:0.208 green:0.616 blue:0.996 alpha:1]], @"hours", [NSUserDefaults dataForColor:[NSColor blackColor]], @"background", nil]];
+	    [defaults registerDefaults:[NSDictionary dictionaryWithObjectsAndKeys:
+                                        [NSUserDefaults dataForColor:[NSColor colorWithCalibratedRed:0.976 green:0.000 blue:0.627 alpha:1]], @"seconds",
+                                        [NSUserDefaults dataForColor:[NSColor colorWithCalibratedRed:0.624 green:0.000 blue:0.996 alpha:1]], @"minutes",
+                                        [NSUserDefaults dataForColor:[NSColor colorWithCalibratedRed:0.208 green:0.616 blue:0.996 alpha:1]], @"hours",
+                                        [NSUserDefaults dataForColor:[NSColor blackColor]], @"background", nil]];
         
 		[self setAnimationTimeInterval:1.0];
 	}
@@ -30,20 +28,16 @@ static NSString * const ModuleName = @"is.mkj.neonclockworksaver";
 
 - (void)animateOneFrame
 {
-    ScreenSaverDefaults *defaults;
+    ScreenSaverDefaults *defaults = [ScreenSaverDefaults defaultsForModuleWithName:ModuleName];
     
-	defaults = [ScreenSaverDefaults defaultsForModuleWithName:ModuleName];
-    
-    // Define variables
+    // Define some variables for convenient computing
     NSSize size = [self bounds].size;
     NSPoint center = NSMakePoint(size.width/2, size.height/2);
-    NSBezierPath *path, *background;
-    NSRect rect;
+    NSBezierPath *path;
     
     // Redraw background
-    rect.origin = NSMakePoint(0, 0);
-    rect.size = size;
-    background = [NSBezierPath bezierPathWithRect:rect];
+    CGRect rect = CGRectMake(0, 0, size.width, size.height);
+    NSBezierPath *background = [NSBezierPath bezierPathWithRect:rect];
     [[defaults colorForKey:@"background"] set];
     [background fill];
     
@@ -137,9 +131,7 @@ static NSString * const ModuleName = @"is.mkj.neonclockworksaver";
 		}
 	}
     
-    ScreenSaverDefaults *defaults;
-    
-	defaults = [ScreenSaverDefaults defaultsForModuleWithName:ModuleName];
+    ScreenSaverDefaults *defaults = [ScreenSaverDefaults defaultsForModuleWithName:ModuleName];
     
     secondsColor.color = [defaults colorForKey:@"seconds"];
     minutesColor.color = [defaults colorForKey:@"minutes"];

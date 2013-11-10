@@ -1,7 +1,11 @@
-//
-//  MyScreenSaverView.h
-//  Cocoa Dev Central: Write a Screen Saver: Part 1
-//
+/**
+ * Neon Clockwork screen saver for OS X Mavericks.
+ *
+ * @author Matěj Kašpar Jirásek http://mkj.is
+ * @version 1.0
+ * @see https://github.com/mkj-is/NeonClockworkSaver
+ *
+ */
 
 #import <ScreenSaver/ScreenSaver.h>
 
@@ -11,7 +15,7 @@
 	IBOutlet NSColorWell *secondsColor;
 	IBOutlet NSColorWell *minutesColor;
 	IBOutlet NSColorWell *hoursColor;
-    IBOutlet NSColorWell *backgroundColour;
+	IBOutlet NSColorWell *backgroundColour;
 }
 
 @end
