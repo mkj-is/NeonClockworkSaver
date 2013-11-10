@@ -13,12 +13,11 @@
 		E736B29C183021FD00974ABB /* NeonClockworkView.m in Sources */ = {isa = PBXBuildFile; fileRef = E736B298183021FD00974ABB /* NeonClockworkView.m */; };
 		E736B29D183021FD00974ABB /* NSUserDefaults+ColorSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = E736B299183021FD00974ABB /* NSUserDefaults+ColorSupport.h */; };
 		E736B29E183021FD00974ABB /* NSUserDefaults+ColorSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = E736B29A183021FD00974ABB /* NSUserDefaults+ColorSupport.m */; };
-		E736B2A91830220F00974ABB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E736B2A41830220F00974ABB /* Info.plist */; };
 		E736B2AA1830220F00974ABB /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = E736B2A51830220F00974ABB /* thumbnail.png */; };
 		E736B2AB1830220F00974ABB /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E736B2A61830220F00974ABB /* thumbnail@2x.png */; };
 		E736B2AE1830224C00974ABB /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = E736B2AC1830224C00974ABB /* ConfigureSheet.xib */; };
 		E736B2AF1830224C00974ABB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E736B2AD1830224C00974ABB /* InfoPlist.strings */; };
-		E736B2B11830225C00974ABB /* Neon Clockwork_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = E736B2B01830225C00974ABB /* Neon Clockwork_Prefix.pch */; };
+		E736B2B5183024DF00974ABB /* Neon Clockwork_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = E736B2B4183024DF00974ABB /* Neon Clockwork_Prefix.pch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,12 +30,12 @@
 		E736B298183021FD00974ABB /* NeonClockworkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NeonClockworkView.m; path = "Neon Clockwork/Code/NeonClockworkView.m"; sourceTree = "<group>"; };
 		E736B299183021FD00974ABB /* NSUserDefaults+ColorSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSUserDefaults+ColorSupport.h"; path = "Neon Clockwork/Code/NSUserDefaults+ColorSupport.h"; sourceTree = "<group>"; };
 		E736B29A183021FD00974ABB /* NSUserDefaults+ColorSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSUserDefaults+ColorSupport.m"; path = "Neon Clockwork/Code/NSUserDefaults+ColorSupport.m"; sourceTree = "<group>"; };
-		E736B2A41830220F00974ABB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Neon Clockwork/Resources/Info.plist"; sourceTree = "<group>"; };
 		E736B2A51830220F00974ABB /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = thumbnail.png; path = "Neon Clockwork/Resources/thumbnail.png"; sourceTree = "<group>"; };
 		E736B2A61830220F00974ABB /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thumbnail@2x.png"; path = "Neon Clockwork/Resources/thumbnail@2x.png"; sourceTree = "<group>"; };
 		E736B2AC1830224C00974ABB /* ConfigureSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ConfigureSheet.xib; path = "Neon Clockwork/Resources/ConfigureSheet.xib"; sourceTree = "<group>"; };
 		E736B2AD1830224C00974ABB /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = "Neon Clockwork/Resources/InfoPlist.strings"; sourceTree = "<group>"; };
-		E736B2B01830225C00974ABB /* Neon Clockwork_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Neon Clockwork_Prefix.pch"; path = "Neon Clockwork/Code/Neon Clockwork_Prefix.pch"; sourceTree = "<group>"; };
+		E736B2B2183024CB00974ABB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E736B2B4183024DF00974ABB /* Neon Clockwork_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Neon Clockwork_Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +74,9 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E736B2B01830225C00974ABB /* Neon Clockwork_Prefix.pch */,
+				E736B2B4183024DF00974ABB /* Neon Clockwork_Prefix.pch */,
 				E736B2AC1830224C00974ABB /* ConfigureSheet.xib */,
-				E736B2A41830220F00974ABB /* Info.plist */,
+				E736B2B2183024CB00974ABB /* Info.plist */,
 				E736B2AD1830224C00974ABB /* InfoPlist.strings */,
 				E736B2A51830220F00974ABB /* thumbnail.png */,
 				E736B2A61830220F00974ABB /* thumbnail@2x.png */,
@@ -130,7 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E736B29D183021FD00974ABB /* NSUserDefaults+ColorSupport.h in Headers */,
-				E736B2B11830225C00974ABB /* Neon Clockwork_Prefix.pch in Headers */,
+				E736B2B5183024DF00974ABB /* Neon Clockwork_Prefix.pch in Headers */,
 				E736B29B183021FD00974ABB /* NeonClockworkView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,9 +188,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E736B2AA1830220F00974ABB /* thumbnail.png in Resources */,
-				E736B2A91830220F00974ABB /* Info.plist in Resources */,
-				E736B2AE1830224C00974ABB /* ConfigureSheet.xib in Resources */,
 				E736B2AB1830220F00974ABB /* thumbnail@2x.png in Resources */,
+				E736B2AE1830224C00974ABB /* ConfigureSheet.xib in Resources */,
 				E736B2AF1830224C00974ABB /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
