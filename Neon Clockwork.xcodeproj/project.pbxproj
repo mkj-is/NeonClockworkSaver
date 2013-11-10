@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D255ACE0486D3F9007BF209 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		8D255ACF0486D3F9007BF209 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F27B2DFFEEEFEF11CA0E56 /* ScreenSaver.framework */; };
+		E736B29B183021FD00974ABB /* NeonClockworkView.h in Headers */ = {isa = PBXBuildFile; fileRef = E736B297183021FD00974ABB /* NeonClockworkView.h */; };
+		E736B29C183021FD00974ABB /* NeonClockworkView.m in Sources */ = {isa = PBXBuildFile; fileRef = E736B298183021FD00974ABB /* NeonClockworkView.m */; };
+		E736B29D183021FD00974ABB /* NSUserDefaults+ColorSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = E736B299183021FD00974ABB /* NSUserDefaults+ColorSupport.h */; };
+		E736B29E183021FD00974ABB /* NSUserDefaults+ColorSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = E736B29A183021FD00974ABB /* NSUserDefaults+ColorSupport.m */; };
+		E736B2A91830220F00974ABB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E736B2A41830220F00974ABB /* Info.plist */; };
+		E736B2AA1830220F00974ABB /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = E736B2A51830220F00974ABB /* thumbnail.png */; };
+		E736B2AB1830220F00974ABB /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E736B2A61830220F00974ABB /* thumbnail@2x.png */; };
+		E736B2AE1830224C00974ABB /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = E736B2AC1830224C00974ABB /* ConfigureSheet.xib */; };
+		E736B2AF1830224C00974ABB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E736B2AD1830224C00974ABB /* InfoPlist.strings */; };
+		E736B2B11830225C00974ABB /* Neon Clockwork_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = E736B2B01830225C00974ABB /* Neon Clockwork_Prefix.pch */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06F27B2DFFEEEFEF11CA0E56 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = /System/Library/Frameworks/ScreenSaver.framework; sourceTree = "<absolute>"; };
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		8D255AD30486D3F9007BF209 /* Neon Clockwork.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Neon Clockwork.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E736B297183021FD00974ABB /* NeonClockworkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NeonClockworkView.h; path = "Neon Clockwork/Code/NeonClockworkView.h"; sourceTree = "<group>"; };
+		E736B298183021FD00974ABB /* NeonClockworkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NeonClockworkView.m; path = "Neon Clockwork/Code/NeonClockworkView.m"; sourceTree = "<group>"; };
+		E736B299183021FD00974ABB /* NSUserDefaults+ColorSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSUserDefaults+ColorSupport.h"; path = "Neon Clockwork/Code/NSUserDefaults+ColorSupport.h"; sourceTree = "<group>"; };
+		E736B29A183021FD00974ABB /* NSUserDefaults+ColorSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSUserDefaults+ColorSupport.m"; path = "Neon Clockwork/Code/NSUserDefaults+ColorSupport.m"; sourceTree = "<group>"; };
+		E736B2A41830220F00974ABB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Neon Clockwork/Resources/Info.plist"; sourceTree = "<group>"; };
+		E736B2A51830220F00974ABB /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = thumbnail.png; path = "Neon Clockwork/Resources/thumbnail.png"; sourceTree = "<group>"; };
+		E736B2A61830220F00974ABB /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thumbnail@2x.png"; path = "Neon Clockwork/Resources/thumbnail@2x.png"; sourceTree = "<group>"; };
+		E736B2AC1830224C00974ABB /* ConfigureSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ConfigureSheet.xib; path = "Neon Clockwork/Resources/ConfigureSheet.xib"; sourceTree = "<group>"; };
+		E736B2AD1830224C00974ABB /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = "Neon Clockwork/Resources/InfoPlist.strings"; sourceTree = "<group>"; };
+		E736B2B01830225C00974ABB /* Neon Clockwork_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Neon Clockwork_Prefix.pch"; path = "Neon Clockwork/Code/Neon Clockwork_Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D255ACD0486D3F9007BF209 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D255ACE0486D3F9007BF209 /* Cocoa.framework in Frameworks */,
+				8D255ACF0486D3F9007BF209 /* ScreenSaver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* MyScreenSaver */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = MyScreenSaver;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E736B2B01830225C00974ABB /* Neon Clockwork_Prefix.pch */,
+				E736B2AC1830224C00974ABB /* ConfigureSheet.xib */,
+				E736B2A41830220F00974ABB /* Info.plist */,
+				E736B2AD1830224C00974ABB /* InfoPlist.strings */,
+				E736B2A51830220F00974ABB /* thumbnail.png */,
+				E736B2A61830220F00974ABB /* thumbnail@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E736B297183021FD00974ABB /* NeonClockworkView.h */,
+				E736B298183021FD00974ABB /* NeonClockworkView.m */,
+				E736B299183021FD00974ABB /* NSUserDefaults+ColorSupport.h */,
+				E736B29A183021FD00974ABB /* NSUserDefaults+ColorSupport.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+				06F27B2DFFEEEFEF11CA0E56 /* ScreenSaver.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D255AD30486D3F9007BF209 /* Neon Clockwork.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8D255AC60486D3F9007BF209 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E736B29D183021FD00974ABB /* NSUserDefaults+ColorSupport.h in Headers */,
+				E736B2B11830225C00974ABB /* Neon Clockwork_Prefix.pch in Headers */,
+				E736B29B183021FD00974ABB /* NeonClockworkView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D255AC50486D3F9007BF209 /* Neon Clockwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D34A2442090173A6002122D1 /* Build configuration list for PBXNativeTarget "Neon Clockwork" */;
+			buildPhases = (
+				8D255AC60486D3F9007BF209 /* Headers */,
+				8D255AC90486D3F9007BF209 /* Resources */,
+				8D255ACB0486D3F9007BF209 /* Sources */,
+				8D255ACD0486D3F9007BF209 /* Frameworks */,
+				8D255AD00486D3F9007BF209 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Neon Clockwork";
+			productInstallPath = "$(HOME)/Library/Screen Savers";
+			productName = MyScreenSaver;
+			productReference = 8D255AD30486D3F9007BF209 /* Neon Clockwork.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = D34A2446090173A6002122D1 /* Build configuration list for PBXProject "Neon Clockwork" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				English,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* MyScreenSaver */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D255AC50486D3F9007BF209 /* Neon Clockwork */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D255AC90486D3F9007BF209 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E736B2AA1830220F00974ABB /* thumbnail.png in Resources */,
+				E736B2A91830220F00974ABB /* Info.plist in Resources */,
+				E736B2AE1830224C00974ABB /* ConfigureSheet.xib in Resources */,
+				E736B2AB1830220F00974ABB /* thumbnail@2x.png in Resources */,
+				E736B2AF1830224C00974ABB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		8D255AD00486D3F9007BF209 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D255ACB0486D3F9007BF209 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E736B29C183021FD00974ABB /* NeonClockworkView.m in Sources */,
+				E736B29E183021FD00974ABB /* NSUserDefaults+ColorSupport.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D34A2443090173A6002122D1 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Neon Clockwork_Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LIBRARY_SEARCH_PATHS = "";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Neon Clockwork";
+				SDKROOT = macosx;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = saver;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		D34A2444090173A6002122D1 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Neon Clockwork_Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Neon Clockwork";
+				SDKROOT = macosx;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = saver;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		D34A2445090173A6002122D1 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Neon Clockwork_Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Neon Clockwork";
+				SDKROOT = macosx;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Default;
+		};
+		D34A2447090173A6002122D1 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx10.7;
+			};
+			name = Development;
+		};
+		D34A2448090173A6002122D1 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx10.7;
+			};
+			name = Deployment;
+		};
+		D34A2449090173A6002122D1 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx10.7;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D34A2442090173A6002122D1 /* Build configuration list for PBXNativeTarget "Neon Clockwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D34A2443090173A6002122D1 /* Development */,
+				D34A2444090173A6002122D1 /* Deployment */,
+				D34A2445090173A6002122D1 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		D34A2446090173A6002122D1 /* Build configuration list for PBXProject "Neon Clockwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D34A2447090173A6002122D1 /* Development */,
+				D34A2448090173A6002122D1 /* Deployment */,
+				D34A2449090173A6002122D1 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
